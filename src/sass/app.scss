@@ -1,0 +1,118 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap-override';
+
+body {
+  background: $gray-1;
+}
+
+.menu a {
+  font-weight: 500;
+  color: $gray-1;
+  background-color: #32a852;
+  border-bottom: 5px solid #268540;
+  border-top: 3px solid #32a852;
+  text-decoration: none;
+  &:hover {
+    background-color: #2d9c4b;
+    border-top: 3px solid #2d9c4b;
+    transition: all 0.3s ease-in-out;
+  }
+  &:active {
+    color: $gray-2;
+    background-color: #268540;
+    border-top: 3px solid $white;
+    transition: border-top 0s ease-in-out;
+  }
+}
+
+.rounded-2 {
+  border-radius: 10px;
+}
+
+.site-name {
+  color: red;
+
+  span {
+    color: $gray-1;
+    background-color: red;
+  }
+}
+
+.one-post__title a {
+  font-size: 16px;
+  line-height: 22px;
+  color: $gray-7;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    color: $gray-5;
+
+    span {
+      color: $white;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 18px;
+    color: $gray-1;
+    background-color: #32a852;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: #2d9c4b;
+    }
+
+    @media (min-width: breakpoint-min(md)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  @media (min-width: breakpoint-min(md)) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: breakpoint-min(xl)) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.story {
+  background-color: $white;
+  color: $gray-3;
+  min-height: 250px;
+
+  &__title a {
+    color: $gray-7;
+    font-weight: 500;
+    &:hover {
+      color: $gray-5;
+    }
+  }
+
+  @media (min-width: 768px) {
+    min-height: 160px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 180px;
+    &:hover {
+      box-shadow: 9px 9px 2px 1px rgba(255, 0, 0, .35);
+    }
+  }
+}
+
+.one-post {
+  background-color: $white;
+
+}
+
+.comment {
+  border: 1px solid $gray-300;
+}
