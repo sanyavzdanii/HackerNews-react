@@ -24,7 +24,7 @@ export default function ShowStories(props) {
                                 allComments2.push(res.data);
                                 setIsLoadingComments(true);
                                 setAllComments(allComments2);
-                                setIsLoadingComments(false);console.log(allComments);
+                                setIsLoadingComments(false);
                             })
                             .catch(error => {
                                 console.log(error);
@@ -87,7 +87,7 @@ export default function ShowStories(props) {
                             </div>
                         </div>
                         <div className="col-12">
-                            {allComments.map((comment, index) => {console.log('popalo');
+                            {allComments.map((comment, index) => {
                                 return (
                                     <div key={`comment-${index}`} className="comment p-3 p-md-4 rounded-2 mb-2 mb-xl-3 mt-3 mt-xl-4">
                                         <div className="mb-2 mb-xl-3 font-weight-bold">{comment.by}</div>
